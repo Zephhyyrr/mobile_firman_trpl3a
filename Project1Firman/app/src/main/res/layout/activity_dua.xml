@@ -98,7 +98,7 @@
                 android:textSize="18sp"
                 android:textStyle="bold"/>
             <Spinner
-                android:id="@+id/editCara"
+                android:id="@+id/spinnCara"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -113,11 +113,11 @@
         android:layout_below="@+id/tableLayout"
         android:layout_centerHorizontal="true"
         android:text="PROSES"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_marginTop="30dp"/>
 
     <TextView
-        android:id="@+id/txtOutDetail"
+        android:id="@+id/txtDetail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/btnProses"

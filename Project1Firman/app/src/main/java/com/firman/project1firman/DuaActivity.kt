@@ -15,10 +15,21 @@ class DuaActivity : AppCompatActivity() {
         val kota = findViewById<EditText>(R.id.editKota)
         val harga = findViewById<EditText>(R.id.editHarga)
         val jumlah = findViewById<EditText>(R.id.editJumlah)
-        val cara = findViewById<Spinner>(R.id.editCara)
-        val out = findViewById<TextView>(R.id.txtOutDetail)
+        val cara = findViewById<Spinner>(R.id.spinnCara)
+        val trans = findViewById<TextView>(R.id.txtDetail)
         val proses = findViewById<Button>(R.id.btnProses)
 
-        proses.setOnClickListener()
+        proses.setOnClickListener {
+            val kotaTujuan = kota.text.toString()
+            val hargaTiket = harga.text.toString().toDouble()
+            val jumlahTiket = jumlah.text.toString().toInt()
+            val totalBayar = hargaTiket*jumlahTiket
+            trans.text =
+                "Detail Transaksi : \n" +
+                        "\n Kota Tujuan: $kotaTujuan " +
+                        "\n Harga : $hargaTiket " +
+                        "\n Jumlah Tiket : $jumlahTiket " +
+                        "\n Total Bayar :  $totalBayar "
+        }
     }
 }
