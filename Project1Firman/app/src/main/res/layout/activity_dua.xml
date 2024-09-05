@@ -191,23 +191,23 @@
             android:textStyle="bold" />
 
         <CheckBox
-            android:id="@+id/chkMakanan"
+            android:id="@+id/chkExecutive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/chkBagasi"
             android:layout_marginStart="125dp"
-            android:text="makanan"
+            android:text="Executive Lounge"
             android:textColor="@color/red"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <CheckBox
-            android:id="@+id/chkMinuman"
+            android:id="@+id/chkMakanan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/chkMakanan"
+            android:layout_below="@id/chkExecutive"
             android:layout_marginStart="125dp"
-            android:text="Minuman"
+            android:text="Makanan dan Minuman"
             android:textColor="@color/red"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -216,7 +216,7 @@
             android:id="@+id/btnProses"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/chkMinuman"
+            android:layout_below="@+id/chkMakanan"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
             android:text="PROSES"
